@@ -1,0 +1,10 @@
+Remove Geolocation plugin from Android
+
+- Cordova RTC work item number: 42278
+- Apache Cordova Jira issue: https://issues.apache.org/jira/browse/CB-5977
+- Markmail / Google Group / StackOverflow reference: http://markmail.org/message/ketdgrzm2dcpxfo2
+- Product PMR: none
+- Cherry-pick the removal of the Geolocation plugin from Android.
+  We had already disabled this plugin with with RTC story 36983 but have
+  since been playing games and tricks when buildling the source zip. This commit
+  properly removes the plugin. Cherry-pick: ab8a448e52b0
