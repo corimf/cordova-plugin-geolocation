@@ -23,3 +23,11 @@ Geolocation plugin, the issue requires the change above plus a change to the
 CDVLocation.m file in the plugin. The iOS8 SDK changed the API for requesting
 permission to access location. Therefore, changes had to be made on the
 native side to account for that.
+
+Fix for app asking for permission on every run in BlackBerry
+- Cordova RTC work item number: 55672
+- Apache Cordova Jira issues: https://issues.apache.org/jira/browse/CB-5334 and https://issues.apache.org/jira/browse/CB-5729
+- StackOverflow reference: http://stackoverflow.com/questions/26617080/worklight-6-1-latest-ifix-pack-gives-popup-in-bb10-while-accessing-geolocation-s
+- IBM APAR: PI29127
+- Worklight RTC work item number: 55790
+- Full description: Customer reported on SO that a bb10 app asked for geo permission every time the app was run in 3.1. This was a bug that was reported and fixed for Cordova 3.4 (see CB-5334) by using a proxy. The proxy introduced a regression in watchLocation which was fixed in CB-5729. This is a cherry pick of both those commits - cb586fd followed by f2a355d.
