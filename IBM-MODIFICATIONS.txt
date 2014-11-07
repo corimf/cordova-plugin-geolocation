@@ -31,3 +31,10 @@ Fix for app asking for permission on every run in BlackBerry
 - IBM APAR: PI29127
 - Worklight RTC work item number: 55790
 - Full description: Customer reported on SO that a bb10 app asked for geo permission every time the app was run in 3.1. This was a bug that was reported and fixed for Cordova 3.4 (see CB-5334) by using a proxy. The proxy introduced a regression in watchLocation which was fixed in CB-5729. This is a cherry pick of both those commits - cb586fd followed by f2a355d.
+
+Cordova iOS 64-bit support
+- Cordova RTC work item number: 55592
+- Worklight RTC work item number: 55901
+- Apache Cordova Jira issue: CB-6212
+- Markmail or Google Group reference: none
+- Fix plugin warnings compiled under arm64 64-bit
