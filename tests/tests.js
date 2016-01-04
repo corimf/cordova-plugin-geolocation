@@ -145,7 +145,7 @@ exports.defineAutoTests = function () {
                     {
                         maximumAge: (5 * 60 * 1000) // 5 minutes maximum age of cached position
                     });
-
+                expect(successWatch).toBeDefined();
             });
 
         });
