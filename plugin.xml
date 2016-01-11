@@ -46,6 +46,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         </config-file>
 
         <source-file src="src/android/Geolocation.java" target-dir="src/org/apache/cordova/geolocation/" />
+        <source-file src="src/android/PermissionHelper.java" target-dir="src/org/apache/cordova/geolocation/" />
 
         <js-module src="www/android/geolocation.js" name="geolocation">
             <clobbers target="navigator.geolocation" />
@@ -94,7 +95,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <source-file src="src/amazon/CordovaLocationListener.java" target-dir="src/org/apache/cordova/geolocation" />
 
     </platform>
-    
+
     <!-- ios -->
     <platform name="ios">
 
@@ -122,11 +123,11 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         <header-file src="src/ios/CDVLocation.h" />
         <source-file src="src/ios/CDVLocation.m" />
         <framework src="CoreLocation.framework" />
-        
+
         <config-file target="*-Info.plist" parent="NSLocationWhenInUseUsageDescription">
             <string></string>
         </config-file>
-        
+
     </platform>
 
     <!-- blackberry10 -->
