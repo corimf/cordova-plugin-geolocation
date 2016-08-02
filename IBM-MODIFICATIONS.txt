@@ -1,3 +1,18 @@
+Add Android M permission support to Cordova
+- Cordova RTC work item number: 106363
+- Apache Cordova Jira issue: 
+- Markmail or Google Group reference:
+- Product PMR: APAR PI61332 (RTC 106363)
+- Cherry-pick: e713e7abe980022e67f4ed1e967a00e74793dcd6, cab6f22d5b20fbb3a68a1f4775d1d0873b82dd61,
+b9426e98ac41dfe7f94b3e965e5436424c22595e, cc7e3cbe42b951d835ca81d4e9c68ea2d542a95a,
+3f0c06368a02c0921e44562a60da7d3833f9926c, fe054593f307f174bf3b880725f89936e924caf6,
+8cf37567c4c144303c59128664db71abe196bc23, 49825f17e56dc6df2e8bf50b3fa03a93960ff5e1,
+a754436ee0f051fb2a684f4a59d361647849dd07, a818d6dcc02cc26a06fec3d95f9eff40f4e6568a,
+9420f405f64fded667eb8335fc9cddc2401d6ff3, 7c57ae9c0470905124c0d5a1430bf09f3a46f1cc
+- Full description: The Android M permission model will request for permissions at 
+run time. To add this support, Cordova plugins will need to add permission request functions 
+in Android API 23 to handle the run time permissions.
+
 Fix geolocation for iOS 8
 
 - Cordova RTC work item number: 51254
